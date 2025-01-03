@@ -6,7 +6,7 @@ By Daw666
 Daw666 | Designing + Programming
 ]]--
 
-local InterfaceBuild = '1VEX'
+local InterfaceBuild = '9NBD'
 local Release = "Build 1.55"
 local RayfieldFolder = "Rayfield"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
