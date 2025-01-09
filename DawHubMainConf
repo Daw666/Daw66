@@ -6,7 +6,7 @@ By Daw666
 Daw666 | Designing + Programming
 ]]--
 
-local InterfaceBuild = '3K3W'
+local InterfaceBuild = '1VEX'
 local Release = "Build 1.55"
 local RayfieldFolder = "Rayfield"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
@@ -141,47 +141,6 @@ local RayfieldLibrary = {
 			InputBackground = Color3.fromRGB(60, 45, 35),
 			InputStroke = Color3.fromRGB(90, 65, 50),
 			PlaceholderColor = Color3.fromRGB(190, 150, 130)
-		},
-
-		DarkRed = {
-			TextColor = Color3.fromRGB(255, 220, 230),
-			Background = Color3.fromRGB(25, 25, 25),
-			Topbar = Color3.fromRGB(35, 35, 35),
-			Shadow = Color3.fromRGB(15, 15, 15),
-
-			NotificationBackground = Color3.fromRGB(50, 25, 30),
-			NotificationActionsBackground = Color3.fromRGB(120, 40, 50),
-
-			TabBackground = Color3.fromRGB(40, 40, 40),
-			TabStroke = Color3.fromRGB(80, 20, 30),
-			TabBackgroundSelected = Color3.fromRGB(120, 50, 60),
-			TabTextColor = Color3.fromRGB(230, 180, 190),
-			SelectedTabTextColor = Color3.fromRGB(255, 150, 160),
-
-			ElementBackground = Color3.fromRGB(35, 25, 25),
-			ElementBackgroundHover = Color3.fromRGB(60, 35, 40),
-			SecondaryElementBackground = Color3.fromRGB(30, 25, 25), 
-			ElementStroke = Color3.fromRGB(90, 40, 50),
-			SecondaryElementStroke = Color3.fromRGB(75, 35, 45),
-
-			SliderBackground = Color3.fromRGB(60, 30, 35),
-			SliderProgress = Color3.fromRGB(255, 70, 90),
-			SliderStroke = Color3.fromRGB(120, 40, 50),
-
-			ToggleBackground = Color3.fromRGB(50, 30, 35),
-			ToggleEnabled = Color3.fromRGB(170, 50, 60),
-			ToggleDisabled = Color3.fromRGB(90, 50, 60),
-			ToggleEnabledStroke = Color3.fromRGB(220, 70, 80),
-			ToggleDisabledStroke = Color3.fromRGB(100, 50, 60),
-			ToggleEnabledOuterStroke = Color3.fromRGB(255, 90, 100),
-			ToggleDisabledOuterStroke = Color3.fromRGB(70, 40, 50),
-
-			DropdownSelected = Color3.fromRGB(60, 30, 35),
-			DropdownUnselected = Color3.fromRGB(50, 30, 35),
-
-			InputBackground = Color3.fromRGB(40, 30, 30),
-			InputStroke = Color3.fromRGB(90, 40, 50),
-			PlaceholderColor = Color3.fromRGB(200, 120, 130)
 		},
 
 		Light = {
@@ -537,7 +496,7 @@ local Debounce = false
 local searchOpen = false
 local Notifications = Rayfield.Notifications
 
-local SelectedTheme = RayfieldLibrary.Theme.Default
+local SelectedTheme = RayfieldLibrary.Theme.DarkBlue
 
 local function ChangeTheme(Theme)
 	if typeof(Theme) == 'string' then
@@ -3231,31 +3190,31 @@ end
 
 if useStudio then
 
-	local Window = RayfieldLibrary:CreateWindow({
-		Name = "Rayfield Example Window",
-		LoadingTitle = "Rayfield Interface Suite",
-		Theme = 'Default',
+	local Window = Rayfield:CreateWindow({
+		Name = "Daw Hub",
+		LoadingTitle = "Daw Hub",
+		Theme = 'DarkRed',
 		Icon = 0,
-		LoadingSubtitle = "by Sirius",
+		LoadingSubtitle = "By Daw666",
 		ConfigurationSaving = {
 			Enabled = true,
 			FolderName = nil,
-			FileName = "Big Hub52"
+			FileName = "Daw Hub"
 		},
 		Discord = {
 			Enabled = false,
-			Invite = "noinvitelink",
+			Invite = "Nothing",
 			RememberJoins = true
 		},
-		KeySystem = false,
+		KeySystem = true,
 		KeySettings = {
-			Title = "Untitled",
-			Subtitle = "Key System",
-			Note = "No method of obtaining the key is provided",
-			FileName = "Key",
+			Title = "Daw Hub",
+			Subtitle = "Система ключей",
+			Note = "Ключ можно получить, написав Daw666",
+			FileName = "Ключ",
 			SaveKey = true,
 			GrabKeyFromSite = false,
-			Key = {"Hello"}
+			Key = {"1"}
 		}
 	})
 
